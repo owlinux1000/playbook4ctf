@@ -28,3 +28,22 @@
     dest: /usr/local/bin/rp++
     mode: 0755
     force: yes
+
+- name: Download gdb-peda
+  git:
+    repo: https://github.com/scwuaptx/peda
+    dest: ~/peda
+  become: vagrant
+
+- name: Download Pwngdb
+  git:
+    repo: https://github.com/scwuaptx/Pwngdb
+    dest: ~/Pwngdb
+  become: vagrant
+  
+- name: Create symbolic link .gdbinit
+  file:
+    src: ~/Pwngdb/.gdbinit
+    dest: ~/.gdbinit
+    state: link
+  become: vagrant
