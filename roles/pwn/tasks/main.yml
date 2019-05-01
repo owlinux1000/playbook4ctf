@@ -11,9 +11,8 @@
   apt: name="{{ pwn_pkgs }}" state=present update_cache=yes
   
 - name: Install useful tools via gem
-  gem: name="{{ item }}" state=latest
+  gem: name="{{ item }}" state=latest user_install=no
   with_items: "{{ pwn_gems }}"
-  become: vagrant
 
 - name: Download pwncat
   get_url:
