@@ -22,6 +22,7 @@ pwn_pkgs:
   - nasm
   - ltrace
   - strace
+  - clang
 pwn_gems:
   - one_gadget
   - seccomp-tools
