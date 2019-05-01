@@ -4,3 +4,7 @@
 
 - name: Install pipenv
   pip: name=pipenv state=latest
+
+- name: Change login shell to fish
+  command: chsh -s /usr/bin/fish vagrant
+  tags: chsh
