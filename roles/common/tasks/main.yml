@@ -7,4 +7,17 @@
 
 - name: Change login shell to fish
   command: chsh -s /usr/bin/fish vagrant
-  tags: chsh
+
+- name: Copy a config of tmux
+  copy:
+    src: ../files/.tmux.conf
+    dest: ~/.tmux.conf
+  become: vagrant
+
+- name: Download my .emacs.d
+  git:
+    repo: https://github.com/owlinux1000/.emacs.d
+    dest: ~/.emacs.d
+  become: vagrant
+  tags: emacs
+    
