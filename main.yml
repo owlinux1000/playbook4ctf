@@ -1,0 +1,7 @@
+---
+- name: Build up pwn environment
+  hosts: target
+  become: yes
+  roles:
+    - { role: pwn, tags: pwn }
+    - { role: common, tags: common }

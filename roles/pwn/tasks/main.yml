@@ -1,0 +1,16 @@
+---
+- name: Check if i386 is enabled
+  shell: dpkg --print-foreign-architectures | grep i386
+  register: result_i386_check
+  
+- name: Enable i386 architecture
+  command: dpkg --add-architecture i386
+  when: result_i386_check.rc != 0
+  
+- name: Install needed package
+  apt: name="{{ pwn_pkgs }}" state=present update_cache=yes
+  
+- name: Install useful tools via gem
+  gem: name="{{ item }}" state=latest
+  with_items: "{{ pwn_gems }}"
+  become: vagrant

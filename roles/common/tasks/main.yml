@@ -1,0 +1,6 @@
+---
+- name: Install needed package
+  apt: name="{{ common_pkgs }}" state=present update_cache=yes
+
+- name: Install pipenv
+  pip: name=pipenv state=latest

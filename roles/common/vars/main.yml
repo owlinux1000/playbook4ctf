@@ -1,0 +1,4 @@
+---
+common_pkgs:
+  - python-pip
+  - python3-pip

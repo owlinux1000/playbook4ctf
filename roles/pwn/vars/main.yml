@@ -1,0 +1,28 @@
+---
+pwn_pkgs:
+  - socat
+  - gdb
+  - gdb-multiarch
+  - libc6-dbg
+  - libc6-dbg:i386
+  - git
+  - binutils
+  - gcc-multilib
+  - g++-multilib
+  - curl
+  - wget
+  - make
+  - libssl-dev
+  - build-essential
+  - ruby
+  - ruby-dev
+  - radare2
+  - netcat
+  - tmux
+  - nasm
+  - ltrace
+  - strace
+pwn_gems:
+  - one_gadget
+  - seccomp-tools
+  - pwntools
