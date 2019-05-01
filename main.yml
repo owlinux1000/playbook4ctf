@@ -5,3 +5,4 @@
   roles:
     - { role: pwn, tags: pwn }
     - { role: common, tags: common }
+    - { role: forensics, tags: forensics }

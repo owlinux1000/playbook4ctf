@@ -1,0 +1,4 @@
+---
+- name: Install useful tools
+  apt: name="{{ forensics_pkgs }}" state=present update_cache=yes
+  

@@ -1,0 +1,7 @@
+---
+forensics_pkgs:
+  - binwalk
+  - exiftool
+  - sleuthkit
+  - foremost
+  - nmap
