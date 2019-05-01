@@ -14,3 +14,10 @@
   gem: name="{{ item }}" state=latest
   with_items: "{{ pwn_gems }}"
   become: vagrant
+
+- name: Download pwncat
+  get_url:
+    url: https://raw.githubusercontent.com/owlinux1000/pwncat/master/pwncat
+    dest: /usr/local/bin/pwncat
+    mode: 0755
+    force: yes
