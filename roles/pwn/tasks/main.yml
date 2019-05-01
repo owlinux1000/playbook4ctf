@@ -21,3 +21,10 @@
     dest: /usr/local/bin/pwncat
     mode: 0755
     force: yes
+
+- name: Download rp++
+  get_url:
+    url: https://github.com/0vercl0k/rp/releases/download/v2-beta/rp-lin-x64
+    dest: /usr/local/bin/rp++
+    mode: 0755
+    force: yes
