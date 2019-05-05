@@ -23,6 +23,7 @@ pwn_pkgs:
   - ltrace
   - strace
   - clang
+  - libz3-4
 pwn_gems:
   - one_gadget
   - seccomp-tools
