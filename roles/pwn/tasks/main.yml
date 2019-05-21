@@ -30,7 +30,7 @@
 
 - name: Download gdb-peda
   git:
-    repo: https://github.com/scwuaptx/peda
+    repo: https://github.com/owlinux1000/peda
     dest: ~/peda
   become: vagrant
 
