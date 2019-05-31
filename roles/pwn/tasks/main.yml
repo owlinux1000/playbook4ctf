@@ -46,3 +46,8 @@
     dest: ~/.gdbinit
     state: link
   become: vagrant
+
+- name: Install rustup
+  shell: curl https://sh.rustup.rs -sSf | sh -s -- -y
+  become: vagrant
+  tags: rust
