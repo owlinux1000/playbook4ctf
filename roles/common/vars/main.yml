@@ -6,3 +6,4 @@ common_pkgs:
   - jq
   - python3-apt
   - fish
+  - p7zip
