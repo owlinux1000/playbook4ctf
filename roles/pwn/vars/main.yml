@@ -24,6 +24,7 @@ pwn_pkgs:
   - strace
   - clang
   - libz3-4
+  - libcapstone3
 pwn_gems:
   - one_gadget
   - seccomp-tools

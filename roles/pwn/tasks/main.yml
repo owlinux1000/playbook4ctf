@@ -51,3 +51,6 @@
   shell: curl https://sh.rustup.rs -sSf | sh -s -- -y
   become: vagrant
   tags: rust
+- include: unicorn.yml
+  tags: unicorn
+  

@@ -1,0 +1,15 @@
+---
+- name: Download the source code
+  git:
+    repo: https://github.com/unicorn-engine/unicorn
+    dest: /usr/local/src/unicorn
+
+- name: make
+  shell: ./make.sh
+  args:
+    chdir: /usr/local/src/unicorn
+    
+- name: make install
+  shell: ./make.sh install
+  args:
+    chdir: /usr/local/src/unicorn
