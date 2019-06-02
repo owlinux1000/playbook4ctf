@@ -12,6 +12,7 @@ pwn_pkgs:
   - curl
   - wget
   - make
+  - cmake
   - libssl-dev
   - build-essential
   - ruby
