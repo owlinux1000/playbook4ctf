@@ -1,0 +1,3 @@
+---
+- name: Install arm pkgs
+  apt: name={{ arm_pkgs }} state=present update_cache=yes

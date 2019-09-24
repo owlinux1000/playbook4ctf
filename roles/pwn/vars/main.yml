@@ -31,3 +31,6 @@ pwn_gems:
   - seccomp-tools
   - pwntools
   - bundler
+arm_pkgs:
+  - g++-arm-linux-gnueabihf
+  - qemu-user-static

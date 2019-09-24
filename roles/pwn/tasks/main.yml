@@ -54,3 +54,5 @@
 - include: unicorn.yml
   tags: unicorn
   
+- include: arm.yml
+  tags: arm
